@@ -18,7 +18,7 @@ import java.util.UUID;
 public class TranslateApi {
 
     private static class MsApi {
-        private static final String apiKey = "384971f0c7a24b1392da0314ba34f5d0";
+        private static final String apiKey = "<API Key>";
         private static final String host =
                 "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=de&to=en";
     }
@@ -26,7 +26,7 @@ public class TranslateApi {
     private static class OxApi {
 
         private static final String appID = "0d5a7709";
-        private static final String apiKey = "2a6b822dadf2bc73564cc17c078869a5";
+        private static final String apiKey = "<API key>";
         private static final String host =
                 "https://od-api.oxforddictionaries.com:443/api/v1/entries/en/%s/synonyms;antonyms";
 
