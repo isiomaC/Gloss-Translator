@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    style="@style/fragment">
+
+    <include layout="@layout/action_bar" />
+    <include layout="@layout/view_recycler" />
+
+</android.support.design.widget.CoordinatorLayout>

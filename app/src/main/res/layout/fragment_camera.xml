@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout style="@style/fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.chuck.artranslate.camera.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.chuck.artranslate.camera.GraphicOverlay
+                android:id="@+id/graphicOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.chuck.artranslate.camera.CameraSourcePreview>
+
+
+            <TextView style="@style/myTexts.center.white"
+                android:id="@+id/screen_info"
+                android:padding="@dimen/pad_20"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/tap_anywhere" />
+
+        <ImageButton
+            android:id="@+id/flash"
+            android:tint="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/flash_off"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/pad_20"
+            android:background="@color/colorPrimary" />
+
+
+        <include layout="@layout/fragment_camera_view" />
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

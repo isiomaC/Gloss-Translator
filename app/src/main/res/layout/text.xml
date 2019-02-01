@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:text="@string/action_settings"
+    android:id="@+id/translated_text"
+    android:layout_width="wrap_content"
+    android:padding="0dp"
+    android:paddingEnd="@dimen/pad_5"
+    style="@style/myTexts.center"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

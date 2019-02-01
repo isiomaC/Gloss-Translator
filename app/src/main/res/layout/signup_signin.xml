@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.chuck.artranslate.authentication.authSActivity">
+
+    <include layout="@layout/half_logo_bg" />
+
+    <include layout="@layout/form_head" />
+
+    <LinearLayout
+        android:layout_below="@+id/txtV2ll"
+        android:id="@+id/edtll"
+        style="@style/form_holder"
+        android:layout_marginTop="@dimen/pad_40">
+
+        <EditText
+            style="@style/myTexts.edit"
+            android:id="@+id/email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/border_bottom"/>
+
+        <EditText
+            style="@style/myTexts.edit"
+            android:id="@+id/password"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnll"
+        android:layout_below="@+id/edtll"
+        android:weightSum="2"
+        style="@style/button_holder">
+
+        <Button style="@style/myButton"
+            android:layout_width="0dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/btn_login"
+            android:text="@string/btn_login"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/sign_up_button"
+            style="@style/myButton"
+            android:text="@string/action_sign_in_short" />
+
+    </LinearLayout>
+
+    <TextView style="@style/myTexts.center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/sign_in_button"
+        android:id="@+id/btn_reset_password"
+        android:text="@string/btn_forgot_password"
+        android:textColor="@color/lightblue"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/pad_30"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:padding="@dimen/pad_20"
+        android:id="@+id/select_all"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/pad_15"
+        android:layout_marginTop="@dimen/pad_15"
+        android:elevation="@dimen/pad_5"
+        android:background="@drawable/round"
+        android:layout_marginStart="@dimen/pad_10"
+        android:layout_marginBottom="@dimen/pad_10">
+
+        <LinearLayout
+            android:id="@+id/Exp_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView style="@style/myTexts"
+                android:padding="0dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/bigTextSize"
+                android:id="@+id/Exp_from"
+                android:layout_width="match_parent"/>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:background="@drawable/border_bottom"
+                android:layout_width="match_parent"
+                style="@style/myTexts"
+                android:textStyle="bold"
+                app:alignItems="flex_start"
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                android:id="@+id/Exp_to"/>
+
+            <TextView style="@style/myTexts"
+                android:layout_marginTop="@dimen/pad_10"
+                android:layout_marginBottom="@dimen/pad_5"
+                android:textSize="@dimen/littleTextSize"
+                android:lines="@null"
+                android:padding="0dp"
+                android:id="@+id/Exp_locale"
+                android:layout_width="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Shr_View"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView style="@style/myTexts"
+                android:textStyle="bold"
+                android:textSize="@dimen/bigTextSize"
+                android:lines="1"
+                android:padding="0dp"
+                android:ellipsize="end"
+                android:id="@+id/left_side"
+                android:layout_weight="5"
+                android:layout_width="0dp"/>
+
+            <TextView style="@style/myTexts.center"
+                android:lines="1"
+                android:padding="0dp"
+                android:text="@string/right"
+                android:textSize="@dimen/bigTextSize"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:layout_width="0dp"/>
+
+            <TextView style="@style/myTexts"
+                android:padding="0dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/bigTextSize"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_width="0dp"
+                android:id="@+id/right_side"
+                android:singleLine="true"
+                android:layout_weight="5"/>
+
+        </LinearLayout>
+
+    <TextView style="@style/myTexts"
+        android:padding="0dp"
+        android:textSize="@dimen/littleTextSize"
+        android:id="@+id/translated" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:elevation="@dimen/pad_10"
+        android:layout_alignParentEnd="true"
+        android:layout_width="@dimen/pad_30"
+        android:layout_height="@dimen/pad_30"
+        android:layout_weight="1"
+        android:src="@drawable/cancel"
+        android:background="@drawable/circle_red"/>
+
+</RelativeLayout>
+
